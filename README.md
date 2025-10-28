@@ -35,7 +35,7 @@ API/
 
 ### Opción 1: Usar la versión en línea (Recomendado)
 La aplicación está desplegada en Vercel:
-**[🔗 Acceder a la aplicación](https://tu-app.vercel.app)**
+**[🔗 Acceder a la aplicación](https://escaner-url.vercel.app/)**
 
 ### Opción 2: Ejecutar localmente
 
