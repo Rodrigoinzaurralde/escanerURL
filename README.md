@@ -33,25 +33,40 @@ API/
 
 ## 🚀 Instalación y Uso
 
-### Prerrequisitos
+### Opción 1: Usar la versión en línea (Recomendado)
+La aplicación está desplegada en Vercel:
+**[🔗 Acceder a la aplicación](https://tu-app.vercel.app)**
 
-- Navegador web moderno
+### Opción 2: Ejecutar localmente
+
+#### Prerrequisitos
+- Node.js 16+ instalado
+- npm o yarn
 - Conexión a internet
-- API key de VirusTotal (ya incluida y codificada)
 
-### Pasos para ejecutar
+#### Pasos para ejecutar localmente
+1. **Clona** este repositorio:
+   ```bash
+   git clone https://github.com/Rodrigoinzaurralde/escanerURL.git
+   cd escanerURL
+   ```
+2. **Instala** las dependencias:
+   ```bash
+   npm install
+   ```
+3. **Ejecuta** el servidor:
+   ```bash
+   npm start
+   ```
+4. **Abre** tu navegador en `http://localhost:3000`
 
-1. **Clona o descarga** este repositorio
-2. **Abre** el archivo `index.html` en tu navegador web
-3. **Introduce** una URL en el campo de texto
-4. **Haz clic** en "Escanear URL"
-5. **Espera** los resultados del análisis
+### Deployment en Vercel
 
-### Ejemplo de uso
-
-```
-URL de ejemplo: https://example.com
-```
+#### Para deployar tu propia versión:
+1. **Fork** este repositorio
+2. **Conecta** tu cuenta de GitHub con Vercel
+3. **Importa** el proyecto en Vercel
+4. **Deploy** automático ✨
 
 ## 📊 Interpretación de Resultados
 
@@ -123,5 +138,3 @@ Si encuentras algún problema o tienes preguntas:
 - Comunidad de desarrolladores por las mejores prácticas implementadas
 
 ---
-
-**Desarrollado con ❤️ para mantener la web más segura**

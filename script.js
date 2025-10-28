@@ -22,13 +22,15 @@
             loadingSpinner.style.display = 'block'; 
 
             try {
-                const submitResponse = await fetch('https://www.virustotal.com/api/v3/urls', {
+                const submitResponse = await fetch('/api/virustotal/urls', {
                     method: 'POST',
                     headers: {
-                        'x-apikey': API_KEY,
-                        'Content-Type': 'application/x-www-form-urlencoded'
+                        'Content-Type': 'application/json'
                     },
-                    body: `url=${encodeURIComponent(urlToScan)}`
+                    body: JSON.stringify({
+                        url: urlToScan,
+                        apiKey: API_KEY
+                    })
                 });
 
                 if (!submitResponse.ok) {
@@ -47,10 +49,10 @@
                 while (analysisResult === null && attempts < maxAttempts) {
                     await new Promise(res => setTimeout(res, delay)); 
                     
-                    const getAnalysisResponse = await fetch(`https://www.virustotal.com/api/v3/analyses/${analysisId}`, {
+                    const getAnalysisResponse = await fetch(`/api/virustotal/analyses/${analysisId}`, {
                         method: 'GET',
                         headers: {
-                            'x-apikey': API_KEY 
+                            'x-api-key': API_KEY
                         }
                     });
 
