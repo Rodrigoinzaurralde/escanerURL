@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escáner de URLs Segura - GitHub Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escáner de URLs Segura</h1>
+        <p class="subtitle">🌐 Versión para GitHub Pages</p>
+        <div class="input-group">
+            <label for="urlInput">Introduce una URL para escanear:</label>
+            <input type="text" id="urlInput" placeholder="Ej: https://sitio-sospechoso.com">
+            <button id="scanButton">Escanear URL</button>
+        </div>
+
+        <div class="loading-spinner" id="loadingSpinner"></div>
+
+        <div id="result">
+            <p>Aquí se mostrarán los resultados del escaneo.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>📋 Versiones disponibles:</h3>
+            <ul>
+                <li><strong>🚀 Vercel (Recomendado):</strong> <a href="https://escaner-url.vercel.app/" target="_blank">escaner-url.vercel.app</a></li>
+                <li><strong>📄 GitHub Pages:</strong> Estás aquí (usa proxy CORS)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script-github-pages.js"></script>
+</body>
+</html>

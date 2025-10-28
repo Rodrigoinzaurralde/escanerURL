@@ -33,11 +33,15 @@ API/
 
 ## 🚀 Instalación y Uso
 
-### Opción 1: Usar la versión en línea (Recomendado)
-La aplicación está desplegada en Vercel:
+### Opción 1: Usar la versión en línea - Vercel (Recomendado)
+La aplicación está desplegada en Vercel con servidor Node.js:
 **[🔗 Acceder a la aplicación](https://escaner-url.vercel.app/)**
 
-### Opción 2: Ejecutar localmente
+### Opción 2: Usar la versión en GitHub Pages
+Versión estática que usa proxy CORS público:
+**[🔗 GitHub Pages](https://rodrigoinzaurralde.github.io/escanerURL/github-pages.html)**
+
+### Opción 3: Ejecutar localmente
 
 #### Prerrequisitos
 - Node.js 16+ instalado
@@ -67,6 +71,20 @@ La aplicación está desplegada en Vercel:
 2. **Conecta** tu cuenta de GitHub con Vercel
 3. **Importa** el proyecto en Vercel
 4. **Deploy** automático ✨
+
+## 🔄 Diferencias entre versiones
+
+### 🚀 **Vercel (Recomendado)**
+- ✅ Servidor Node.js dedicado
+- ✅ Mejor rendimiento y velocidad
+- ✅ CORS gestionado por servidor propio
+- ✅ Más confiable y estable
+
+### 📄 **GitHub Pages**
+- ✅ Completamente gratuito
+- ✅ Usa proxy CORS público (allorigins.win)
+- ⚠️ Puede ser más lento
+- ⚠️ Dependiente de servicios externos
 
 ## 📊 Interpretación de Resultados
 
