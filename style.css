@@ -163,3 +163,99 @@
         .info-box a:hover {
             text-decoration: underline;
         }
+
+        .error-message {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .results-container {
+            text-align: left;
+        }
+
+        .results-container h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .verdict-box {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid;
+        }
+
+        .verdict-box.malicious {
+            background-color: #ffebee;
+            border-left-color: #f44336;
+        }
+
+        .verdict-box.suspicious {
+            background-color: #fff8e1;
+            border-left-color: #ff9800;
+        }
+
+        .verdict-box.safe {
+            background-color: #e8f5e8;
+            border-left-color: #4caf50;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            opacity: 0.7;
+        }
+
+        .stat-item.malicious .stat-number {
+            color: #f44336;
+        }
+
+        .stat-item.suspicious .stat-number {
+            color: #ff9800;
+        }
+
+        .stat-item.safe .stat-number {
+            color: #4caf50;
+        }
+
+        .stat-item.undetected .stat-number {
+            color: #9e9e9e;
+        }
+
+        .total-scans {
+            text-align: center;
+            font-size: 16px;
+            margin: 15px 0;
+        }
+
+        .disclaimer {
+            text-align: center;
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 20px;
+        }
